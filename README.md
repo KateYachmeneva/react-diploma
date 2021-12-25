@@ -2,7 +2,7 @@
 
 [![Build status](https://ci.appveyor.com/api/projects/status/cgay84aljsopcexp?svg=true)](https://ci.appveyor.com/project/KateYachmeneva/react-diploma)
 
-[Ссылка на GitHub Pages](https://kateyachmeneva.github.iithub.co/ahj-diploma-frontend/)<br>
+[Ссылка на GitHub Pages](https://kateyachmeneva.github.io/react-diploma/)<br>
 [Репозиторий Backend](https://github.com/KateYachmeneva/react-diploma-backend)
 
 # Дипломный проект курса «React»
