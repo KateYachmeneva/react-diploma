@@ -1,43 +1,57 @@
 import React from 'react';
+import { Link, withRouter } from 'react-router-dom';
+import { nanoid } from '@reduxjs/toolkit';
+import SearchForm from '../searchForm/SearchForm.jsx';
+import CartControl from '../cart/CartControl.jsx';
+import img from '../../img/header-logo.png';
 
-const Header = () => (<header class="container">
-<div class="row">
-  <div class="col">
-    <nav class="navbar navbar-expand-sm navbar-light bg-light">
-      <a class="navbar-brand" href="/">
-      <img src="./img/header-logo.png" alt="Bosa Noga"/>
-      </a>
-      <div class="collapase navbar-collapse" id="navbarMain">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="/">Главная</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/catalog.html">Каталог</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/about.html">О магазине</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/contacts.html">Контакты</a>
-          </li>
-        </ul>
-        <div>
-          <div class="header-controls-pics">
-            <div data-id="search-expander" class="header-controls-pic header-controls-search"></div>
-            {/* <!-- Do programmatic navigation on click to /cart.html --> */}
-            <div class="header-controls-pic header-controls-cart">
-              <div class="header-controls-cart-full">1</div>
-              <div class="header-controls-cart-menu"></div>
-            </div>
+const links = [
+  { title: 'Главная', alias: '/' },
+  { title: 'Каталог', alias: '/catalog' },
+  { title: 'О магазине', alias: '/about' },
+  { title: 'Контакты', alias: '/contacts' },
+];
+
+function Header({ location }) {
+  return (
+    <React.Fragment>
+      <header className="container">
+        <div className="row">
+          <div className="col">
+            <nav className="navbar navbar-expand-sm navbar-light bg-light">
+              <a className="navbar-brand" href="/">
+                <img src={img} alt="Bosa Noga" />
+              </a>
+              <div className="collapase navbar-collapse" id="navbarMain">
+                <ul className="navbar-nav mr-auto">
+                  {links.map((link) => (
+                    <li
+                      key={nanoid()}
+                      className={`nav-item${
+                        location.pathname === link.alias ? ' active' : ''
+                      }`}
+                    >
+                      <Link
+                        className="nav-link"
+                        to={`/${process.env.PUBLIC_URL}${link.alias}`}
+                      >
+                        {link.title}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+                <div>
+                  <div className="header-controls-pics">
+                    <SearchForm header="true" prefix="header-controls" />
+                    <CartControl />
+                  </div>
+                </div>
+              </div>
+            </nav>
           </div>
-          <form data-id="search-form" class="header-controls-search-form form-inline invisible">
-            <input class="form-control" placeholder="Поиск"/>
-          </form>
         </div>
-      </div>
-    </nav>
-  </div>
-</div>
-</header>);
-export default Header;
+      </header>
+    </React.Fragment>
+  );
+}
+export default withRouter(Header);
