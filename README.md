@@ -5,7 +5,7 @@
 [Ссылка на GitHub Pages](https://kateyachmeneva.github.io/react-diploma/)<br>
 [Репозиторий Backend](https://github.com/KateYachmeneva/react-diploma-backend)
 
-# Дипломный проект курса «React».Интернет-магазин обуви "Bosa Noga".
+# Дипломный проект курса «React».
 
 ---
 
