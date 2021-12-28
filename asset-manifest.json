@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-diploma/static/css/main.8315c93c.chunk.css",
-    "main.js": "/react-diploma/static/js/main.b43d7d6e.chunk.js",
-    "main.js.map": "/react-diploma/static/js/main.b43d7d6e.chunk.js.map",
+    "main.js": "/react-diploma/static/js/main.8d7fcbac.chunk.js",
+    "main.js.map": "/react-diploma/static/js/main.8d7fcbac.chunk.js.map",
     "runtime-main.js": "/react-diploma/static/js/runtime-main.19045bc9.js",
     "runtime-main.js.map": "/react-diploma/static/js/runtime-main.19045bc9.js.map",
     "static/css/2.858c4db3.chunk.css": "/react-diploma/static/css/2.858c4db3.chunk.css",
@@ -22,6 +22,6 @@
     "static/css/2.858c4db3.chunk.css",
     "static/js/2.32052125.chunk.js",
     "static/css/main.8315c93c.chunk.css",
-    "static/js/main.b43d7d6e.chunk.js"
+    "static/js/main.8d7fcbac.chunk.js"
   ]
 }
