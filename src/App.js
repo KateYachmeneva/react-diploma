@@ -35,8 +35,8 @@ export default function App() {
                 <Route exact path="/about" component={About} />
                 <Route exact path="/contacts" component={Contacts} />
                 <Route exact path="/cart" component={Cart} />
-                <Route exact path="/404" component={NotFound} />
-                <Redirect from="*" to="/404" />
+                <Route path='/404' component={NotFound} />
+                <Redirect from='*' to='/404' />
               </Switch>
             </div>
           </div>
