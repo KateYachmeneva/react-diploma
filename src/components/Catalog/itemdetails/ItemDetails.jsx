@@ -48,7 +48,7 @@ function ItemDetails(props) {
       quantity,
     });
   };
-  console.log(itemState);
+  console.log(itemData);
   if (itemState === 'idle' || itemState === 'additem') {
     return (
       <React.Fragment>

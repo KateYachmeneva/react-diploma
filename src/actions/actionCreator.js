@@ -71,15 +71,16 @@ export const getItemDetails = createAsyncThunk(
   'itemdetails/getItemDetails',
   async (id) => {
     const data = await fetchDataItem(id);
+    console.log(data);
     return {
       ...data,
       avaliableSizes: data.sizes.reduce(
-        (prev, curr) => (curr.avaliable ? [...prev, curr.size] : prev),
-        [],
+        (prev, curr) => ((curr.avalible) ? [...prev, curr.size] : prev), [],
       ),
     };
   },
 );
+
 // cartitems
 export const addToCart = createAction('cartitems/addToCart');
 export const removeDeleted = createAction('cartitems/removeDeleted');
