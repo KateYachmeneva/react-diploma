@@ -14,6 +14,7 @@ export default function CartControl() {
 
   const handleClick = () => {
     history.push('/cart');
+    console.log(history);
   };
 
   return (

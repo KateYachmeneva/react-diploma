@@ -24,21 +24,10 @@ function Header({ location }) {
               </a>
               <div className="collapase navbar-collapse" id="navbarMain">
                 <ul className="navbar-nav mr-auto">
-                  {links.map((link) => (
-                    <li
-                      key={nanoid()}
-                      className={`nav-item${
-                        location.pathname === link.alias ? ' active' : ''
-                      }`}
-                    >
-                      <Link
-                        className="nav-link"
-                        to={`/${process.env.PUBLIC_URL}${link.alias}`}
-                      >
-                        {link.title}
-                      </Link>
-                    </li>
-                  ))}
+                {links.map((link) => (
+                  <li key={nanoid()} className={`nav-item${location.pathname === link.alias ? ' active' : ''}`}>
+                      <Link className="nav-link" to={`${link.alias}`}>{link.title}</Link>
+                  </li>))}
                 </ul>
                 <div>
                   <div className="header-controls-pics">

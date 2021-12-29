@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 
 export default function LoadButton(props) {
   const { fetched, more, currentState } = props;
-  console.log(props);
   const err = currentState.startsWith('error');
   const buttonText = !err ? 'Загрузить еще' : 'Повторить попытку';
   const [count, setCount] = useState(5);

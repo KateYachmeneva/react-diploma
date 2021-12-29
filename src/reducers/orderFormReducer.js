@@ -2,7 +2,7 @@ import { createReducer } from '@reduxjs/toolkit';
 
 const initialState = {
   orderFormState: 'idle',
-  adress: { value: '', error: null },
+  address: { value: '', error: null },
   phone: { value: '', error: null },
   agreement: { value: false },
 };

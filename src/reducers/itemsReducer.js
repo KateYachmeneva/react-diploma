@@ -29,5 +29,5 @@ const itemsSlice = createSlice({
     });
   },
 });
-console.log(itemsSlice.reducer);
+
 export default itemsSlice.reducer;

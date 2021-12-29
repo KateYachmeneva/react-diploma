@@ -11,7 +11,6 @@ import {
 } from '../../actions/actionCreator';
 
 function SearchForm(props) {
-  console.log(props);
   const searchInput = React.createRef();
   const history = useHistory();
   const inCatalog = history.location.pathname.endsWith('catalog');
@@ -74,7 +73,6 @@ function SearchForm(props) {
 
 const mapStateToProps = (state) => {
   const { value, hidden } = state.search;
-  console.log({ value, hidden });
   return { value, hidden };
 };
 const mapDispatchToProps = (dispatch) => ({

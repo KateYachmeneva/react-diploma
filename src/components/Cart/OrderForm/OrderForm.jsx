@@ -60,7 +60,7 @@ function OrderForm(props) {
         >
           <form className="card-body" onSubmit={handleSubmit}>
             <div className="form-group">
-              <label htmlfor="phone">Телефон</label>
+              <label htmlFor="phone">Телефон</label>
               <input
                 className="form-control"
                 id="phone"
@@ -80,7 +80,7 @@ function OrderForm(props) {
               <label htmlFor="address">Адрес доставки</label>
               <input
                 className="form-control"
-                id="adress"
+                id="address"
                 placeholder="Адрес доставки"
                 value={address.value}
                 onChange={handleChange}

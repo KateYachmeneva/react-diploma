@@ -51,10 +51,9 @@ const cartItemsSlice = createSlice({
     clearCart: () => initialState,
   },
   extraReducers: (builder) => {
-    builder.addCase('cart/fetchPrices/fulfilled', (state, action) => (el) => ({
-      ...el,
-      newPrice: action.payload.find((elTwo) => elTwo.id === el.id).price,
-    }));
+    builder.addCase('cart/fetchPrices/fulfilled', (state, action) => state.map((i) => (
+      { ...i, newPrice: action.payload.find((d) => d.id === i.id).price }
+    )));
   },
 });
 

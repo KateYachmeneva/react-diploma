@@ -10,7 +10,6 @@ import {
 } from '../../actions/actionCreator';
 
 const Cart = (props) => {
-  console.log(props);
   const { cartState } = useSelector((state) => state.cart);
   const cartitems = useSelector((state) => state.cartitems);
   const sum = cartitems
