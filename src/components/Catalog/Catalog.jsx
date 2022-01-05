@@ -1,7 +1,7 @@
 import React from 'react';
-import SearchForm from '../searchForm/SearchForm.jsx';
-import Categories from './categories/Categories.jsx';
-import Items from './items/Items.jsx';
+import SearchForm from '../SearchForm/SearchForm.jsx';
+import Categories from './Categories/Categories.jsx';
+import Items from './Items/Items.jsx';
 
 export default function Catalog() {
   return (

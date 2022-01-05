@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useSelector, connect } from 'react-redux';
-import Preloader from '../preloader/Preloader.jsx';
+import Preloader from '../Preloader/Preloader.jsx';
 import OrderForm from './OrderForm/OrderForm.jsx';
 import LoadButton from './LoadButton/LoadButton.jsx';
 import {

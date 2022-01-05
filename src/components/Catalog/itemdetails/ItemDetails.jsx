@@ -9,8 +9,8 @@ import {
   addToCart,
   addCartTooltip,
 } from '../../../actions/actionCreator';
-import Preloader from '../../preloader/Preloader.jsx';
-import LoadButton from '../../cart/LoadButton/LoadButton.jsx';
+import Preloader from '../../Preloader/Preloader.jsx';
+import LoadButton from '../../Cart/LoadButton/LoadButton.jsx';
 
 function ItemDetails(props) {
   const {

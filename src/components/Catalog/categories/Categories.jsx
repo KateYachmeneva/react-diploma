@@ -7,8 +7,8 @@ import {
   resetCategory,
   getCategories,
 } from '../../../actions/actionCreator';
-import Preloader from '../../preloader/Preloader.jsx';
-import LoadButton from '../../cart/LoadButton/LoadButton.jsx';
+import Preloader from '../../Preloader/Preloader.jsx';
+import LoadButton from '../../Cart/LoadButton/LoadButton.jsx';
 
 function Categories(props) {
   const { categoriesList, categoriesState } = useSelector(

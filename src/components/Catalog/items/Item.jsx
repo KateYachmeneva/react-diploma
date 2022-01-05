@@ -32,8 +32,9 @@ const mapStateToProps = (state, ownProps) => {
   const items = state.items.itemsList.length
     ? state.items.itemsList
     : state.topsales.topsalesList;
+  console.log(items);
   const { id } = ownProps;
-  const currentItem = items.find((el) => el.id === id);
+  const currentItem = items.find((i) => i.id === id);
   return {
     id,
     img: currentItem.img,

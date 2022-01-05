@@ -8,8 +8,8 @@ import {
   resetItems,
 } from '../../../actions/actionCreator';
 import Item from './Item.jsx';
-import LoadButton from '../../cart/LoadButton/LoadButton.jsx';
-import Preloader from '../../preloader/Preloader.jsx';
+import LoadButton from '../../Cart/LoadButton/LoadButton.jsx';
+import Preloader from '../../Preloader/Preloader.jsx';
 
 function Items(props) {
   const { itemsList, itemsState, lastFetched } = useSelector(

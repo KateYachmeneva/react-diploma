@@ -6,7 +6,7 @@ import {
   checkAddress,
   sendOrder,
 } from '../../../actions/actionCreator';
-import Preloader from '../../preloader/Preloader.jsx';
+import Preloader from '../../Preloader/Preloader.jsx';
 import LoadButton from '../LoadButton/LoadButton.jsx';
 
 function OrderForm(props) {

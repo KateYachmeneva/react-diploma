@@ -1,5 +1,5 @@
 import React from 'react';
-import TopSales from '../catalog/topsales/TopSales.jsx';
+import TopSales from '../Catalog/Topsales/TopSales.jsx';
 
 const HomePage = () => (
   <React.Fragment>

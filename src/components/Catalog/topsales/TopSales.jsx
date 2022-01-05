@@ -3,9 +3,9 @@ import React from 'react';
 import Grid from '@react-css/grid';
 import { nanoid } from '@reduxjs/toolkit';
 import { getTopSales } from '../../../actions/actionCreator';
-import Preloader from '../../preloader/Preloader.jsx';
-import Item from '../items/Item.jsx';
-import LoadButton from '../../cart/LoadButton/LoadButton.jsx';
+import Preloader from '../../Preloader/Preloader.jsx';
+import Item from '../Items/Item.jsx';
+import LoadButton from '../../Cart/LoadButton/LoadButton.jsx';
 
 function TopSales() {
   const { topsalesList, topsalesState } = useSelector(

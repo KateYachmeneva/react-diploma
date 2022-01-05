@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import { nanoid } from '@reduxjs/toolkit';
-import SearchForm from '../searchForm/SearchForm.jsx';
-import CartControl from '../cart/CartControl.jsx';
+import SearchForm from '../SearchForm/SearchForm.jsx';
+import CartControl from '../Cart/CartControl.jsx';
 import img from '../../img/header-logo.png';
 
 const links = [

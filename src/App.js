@@ -5,15 +5,15 @@ import {
   Redirect,
 } from 'react-router-dom';
 import './App.css';
-import HomePage from './components/homePage/HomePage.jsx';
-import Catalog from './components/catalog/Catalog.jsx';
-import About from './components/about/About.jsx';
-import Contacts from './components/contacts/Contacts.jsx';
-import Header from './components/header/Header.jsx';
-import ItemDetails from './components/catalog/itemdetails/ItemDetails.jsx';
-import NotFound from './components/notFound/NotFound.jsx';
-import Footer from './components/footer/Footer.jsx';
-import Cart from './components/cart/Cart.jsx';
+import HomePage from './components/HomePage/HomePage.jsx';
+import Catalog from './components/Catalog/Catalog.jsx';
+import About from './components/About/About.jsx';
+import Contacts from './components/Contacts/Contacts.jsx';
+import Header from './components/Header/Header.jsx';
+import ItemDetails from './components/Catalog/ItemDetails/ItemDetails.jsx';
+import NotFound from './components/NotFound/NotFound.jsx';
+import Footer from './components/Footer/Footer.jsx';
+import Cart from './components/Cart/Cart.jsx';
 import img from './img/banner.jpg';
 
 export default function App() {
