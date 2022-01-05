@@ -36,7 +36,7 @@ function ItemDetails(props) {
   };
 
   const handleSelectSize = (size) => {
-    props.selectSize(size);
+    props.selectedSize(size);
   };
 
   const handleBuy = (size, quantity) => {
@@ -48,7 +48,6 @@ function ItemDetails(props) {
       quantity,
     });
   };
-  console.log(itemData);
   if (itemState === 'idle' || itemState === 'additem') {
     return (
       <React.Fragment>

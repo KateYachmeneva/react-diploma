@@ -71,7 +71,6 @@ export const getItemDetails = createAsyncThunk(
   'itemdetails/getItemDetails',
   async (id) => {
     const data = await fetchDataItem(id);
-    console.log(data);
     return {
       ...data,
       avaliableSizes: data.sizes.reduce(

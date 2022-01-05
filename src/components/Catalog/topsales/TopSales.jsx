@@ -13,12 +13,9 @@ function TopSales() {
   );
   const dispatch = useDispatch();
 
-  const firstLoad = () => {
+  const firstLoad = React.useEffect(() => {
     dispatch(getTopSales());
-  };
-  React.useEffect(() => {
-    firstLoad();
-  }, [dispatch]);
+  }, []);
 
   return (
     <React.Fragment>

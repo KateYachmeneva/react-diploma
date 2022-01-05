@@ -29,10 +29,6 @@ function Categories(props) {
     props.changeCategory(id);
   };
 
-  const handleReset = () => {
-    props.resetCategory();
-  };
-
   switch (categoriesState) {
     case 'idle':
       return (
@@ -41,7 +37,7 @@ function Categories(props) {
             <li className="nav-item">
               <a
                 className={`nav-link ${categoryId === null ? 'active' : ''}`}
-                onClick={() => handleReset()}
+                onClick={() => props.resetCategory()}
                 href="#"
               >
                 Все

@@ -26,12 +26,9 @@ const Cart = (props) => {
   };
 
   useEffect(() => {
-    const clear = () => props.removeDeleted();
-    window.addEventListener('beforeunload', clear);
-    firstLoad();
+    const clean = () => props.removeDeleted();
     return () => {
-      window.removeEventListener('beforeunload', clear);
-      clear();
+      clean();
     };
   }, []);
 
