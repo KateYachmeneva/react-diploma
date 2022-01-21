@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-
+import { Link } from 'react-router-dom';
 import GridItem from '@react-css/grid/dist/src/components/GridItem';
 import Grid from '@react-css/grid';
 
@@ -17,12 +17,9 @@ function Item(props) {
         <Grid className="card-body" rows="1fr">
           <p className="card-text">{title}</p>
           <p className="card-text">{price} руб.</p>
-          <a
-            href={`/react-diploma/catalog/${id}`}
-            className="btn btn-outline-primary"
-          >
+          <Link className="btn btn-outline-primary" to={`/catalog/${id}`}>
             Заказать
-          </a>
+        </Link>
         </Grid>
       </GridItem>
     </>
@@ -32,7 +29,6 @@ const mapStateToProps = (state, ownProps) => {
   const items = state.items.itemsList.length
     ? state.items.itemsList
     : state.topsales.topsalesList;
-  console.log(items);
   const { id } = ownProps;
   const currentItem = items.find((i) => i.id === id);
   return {
